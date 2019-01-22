@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tech News</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Sitw about news in tech world">
+        <meta name="keywords" content="tech, news, samsung, apple, amazon">
+        <meta name="author" content="Marko Ružević">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <div class="tech-image"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li style="float:right"><a href="about.html">About</a></li>                    
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Contact Form</h1>
+            <div id="contact">
+                <iframe src="https://maps.google.com/maps?width=700&amp;height=400&amp;hl=en&amp;q=Zagreba%C4%8Dka%20ul.%205%2C%2010410%20Velika%20Gorica+(Veleu%C4%8Dili%C5%A1te%20Velika%20Gorica)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" width="100%" height="400" frameborder="0"style="border:0" allowfullscreen></iframe>
+                <form action="contact.php" id="contact_form" name="contact_form" method="POST">
+                    <label for="fname">First name *</label>
+                    <input type="text" id="fname" name="fistname" placeholder="Your name..." required>
+
+                    <label for="lname">Last name *</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+
+                    <label for="email">Your e-amil *</label>
+                    <input type="email" id="email" name="email" placeholder="Your email..." required>
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="">Please select</option>
+                        <option value="BE">Belgium</option>
+                        <option value="HR" selected>Croatia</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="HU">Hungary</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Here you can write your questions or suggestions..." style="height: 200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+
+        </main>
+        <footer>
+            <p>Copyright &copy; 2019 Marko Ružević. <a href="https://github.com/mruzevic"><img src="img/GitHub-Mark-Light-32px.png" title="Github" alt="Github"></a></p>
+        </footer>
+    </body>
+</html>
+
